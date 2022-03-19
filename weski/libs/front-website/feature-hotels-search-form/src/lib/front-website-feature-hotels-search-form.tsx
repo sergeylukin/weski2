@@ -19,8 +19,8 @@ export function FrontWebsiteFeatureHotelsSearchForm(
 ) {
   const { setHotels } = props;
   const [resort, setResort] = useState(1);
-  const [fromDate, setFromDate] = useState('');
-  const [toDate, setToDate] = useState('');
+  const [fromDate, setFromDate] = useState('03/04/2022');
+  const [toDate, setToDate] = useState('03/11/2022');
   const [groupSize, setGroupSize] = useState(2);
   const hotels = useHotels(String(resort), fromDate, toDate, groupSize);
 
