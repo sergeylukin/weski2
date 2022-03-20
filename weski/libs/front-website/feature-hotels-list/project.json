@@ -1,0 +1,25 @@
+{
+  "root": "libs/front-website/feature-hotels-list",
+  "sourceRoot": "libs/front-website/feature-hotels-list/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/front-website/feature-hotels-list/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/front-website/feature-hotels-list"],
+      "options": {
+        "jestConfig": "libs/front-website/feature-hotels-list/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
