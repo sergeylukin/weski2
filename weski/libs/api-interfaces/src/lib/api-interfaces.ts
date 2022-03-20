@@ -7,4 +7,8 @@ export interface Offer extends BaseEntity {
   description: string;
 }
 
+export interface Resort extends BaseEntity {
+  name: string;
+}
+
 export const API_URL = '/api/';
