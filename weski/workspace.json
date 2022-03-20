@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "front-website": "apps/front-website",
+    "front-website-e2e": "apps/front-website-e2e"
+  }
 }
