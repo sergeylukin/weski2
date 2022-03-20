@@ -2,6 +2,7 @@
   "root": "apps/front-website",
   "sourceRoot": "apps/front-website/src",
   "projectType": "application",
+  "implicitDependencies": ["shared-assets"],
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
