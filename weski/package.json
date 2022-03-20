@@ -19,6 +19,7 @@
     "@nestjs/mapped-types": "1.0.1",
     "@nestjs/platform-express": "^8.0.0",
     "@nrwl/nest": "13.9.3",
+    "axios": "0.26.1",
     "core-js": "^3.6.5",
     "react": "17.0.2",
     "react-dom": "17.0.2",

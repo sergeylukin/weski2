@@ -7,4 +7,4 @@ export interface Offer extends BaseEntity {
   description: string;
 }
 
-export const OFFERS_API_URL = '/api/offers';
+export const API_URL = '/api/';
