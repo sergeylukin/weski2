@@ -1,13 +1,18 @@
-import { getGreeting } from '../support/app.po';
+import { getHotelSearchButton } from '../support/app.po';
 
-describe('front-website', () => {
+describe('gomepage', () => {
   beforeEach(() => cy.visit('/'));
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+  it('should include hotels list feature', () => {
+    cy.contains('FrontWebsiteFeatureHotelsList');
+  });
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome front-website');
+  it('should display list of hotels on search', () => {
+    cy.contains('a', 'Some place').within(() => {
+      cy.contains('a', 'More details');
+    });
+    getHotelSearchResults().should((t) => expect(t.length).equal(0));
+    getHotelSearchButton().click();
+    getTodos().should((t) => expect(t.length).equal(3));
   });
 });
