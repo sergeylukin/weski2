@@ -21,6 +21,9 @@
       ],
       "@namespace/front-website/feature-hotels-list": [
         "libs/front-website/feature-hotels-list/src/index.ts"
+      ],
+      "@namespace/front-website/feature-hotels-search-form": [
+        "libs/front-website/feature-hotels-search-form/src/index.ts"
       ]
     }
   },

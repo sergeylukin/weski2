@@ -1,0 +1,25 @@
+{
+  "root": "libs/front-website/feature-hotels-search-form",
+  "sourceRoot": "libs/front-website/feature-hotels-search-form/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/front-website/feature-hotels-search-form/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/front-website/feature-hotels-search-form"],
+      "options": {
+        "jestConfig": "libs/front-website/feature-hotels-search-form/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

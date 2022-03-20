@@ -6,6 +6,7 @@
     "front-website": "apps/front-website",
     "front-website-data-access-hotels": "libs/front-website/data-access-hotels",
     "front-website-e2e": "apps/front-website-e2e",
-    "front-website-feature-hotels-list": "libs/front-website/feature-hotels-list"
+    "front-website-feature-hotels-list": "libs/front-website/feature-hotels-list",
+    "front-website-feature-hotels-search-form": "libs/front-website/feature-hotels-search-form"
   }
 }
