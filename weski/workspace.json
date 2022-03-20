@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
     "front-website": "apps/front-website",
     "front-website-data-access-hotels": "libs/front-website/data-access-hotels",
     "front-website-e2e": "apps/front-website-e2e",
