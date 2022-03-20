@@ -4,6 +4,7 @@ export interface BaseEntity {
 
 export interface Hotel extends BaseEntity {
   name: string;
+  image: string;
 }
 
 export interface Resort extends BaseEntity {

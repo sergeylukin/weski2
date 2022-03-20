@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
+import { Stack, Select } from '@chakra-ui/react';
 
 import { useHotels } from '@namespace/front-website/data-access-hotels';
 import { Hotel, Resort } from '@namespace/api-interfaces';
@@ -11,7 +12,10 @@ export interface FrontWebsiteFeatureHotelsSearchFormProps {
 }
 
 const StyledFrontWebsiteFeatureHotelsSearchForm = styled.div`
-  color: pink;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  color: brand;
 `;
 
 export function FrontWebsiteFeatureHotelsSearchForm(
@@ -30,12 +34,46 @@ export function FrontWebsiteFeatureHotelsSearchForm(
 
   return (
     <StyledFrontWebsiteFeatureHotelsSearchForm>
-      <h1>Welcome to FrontWebsiteFeatureHotelsSearchForm!</h1>
-      <select onChange={(ev) => setResort(parseInt(ev.target.value, 10))}>
+      <Select
+        mr={10}
+        placeholder="Resort"
+        variant="outline"
+        onChange={(ev) => setResort(parseInt(ev.target.value, 10))}
+      >
         {resorts.map((resort: Resort) => (
           <option value={String(resort.id)}>{resort.name}</option>
         ))}
-      </select>
+      </Select>
+      <Select
+        mr={10}
+        placeholder="From date"
+        variant="outline"
+        onChange={(ev) => setFromDate(ev.target.value)}
+      >
+        {['03/04/2022'].map((date: string) => (
+          <option value={String(date)}>{date}</option>
+        ))}
+      </Select>
+      <Select
+        mr={10}
+        placeholder="To date"
+        variant="outline"
+        onChange={(ev) => setToDate(ev.target.value)}
+      >
+        {['03/11/2022'].map((date: string) => (
+          <option value={String(date)}>{date}</option>
+        ))}
+      </Select>
+      <Select
+        mr={10}
+        placeholder="Group size"
+        variant="outline"
+        onChange={(ev) => setGroupSize(parseInt(ev.target.value, 10))}
+      >
+        {[1, 2, 3, 4].map((size: number) => (
+          <option value={String(size)}>{size}</option>
+        ))}
+      </Select>
     </StyledFrontWebsiteFeatureHotelsSearchForm>
   );
 }

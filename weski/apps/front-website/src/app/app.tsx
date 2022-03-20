@@ -6,7 +6,7 @@ import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 
 const colors = {
   brand: {
-    500: '#2a69ac',
+    500: '#0d59f9',
   },
 };
 

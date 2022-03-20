@@ -17,6 +17,7 @@ export class OffersService {
       return mock.accomodations.map((hotel) => ({
         id: uuidv4(),
         name: hotel.HotelName,
+        image: hotel.HotelDescriptiveContent.Images[0].URL,
       }));
     } else {
       const requests = Array.from(Array(MAX_GROUP_SIZE - group_size + 1)).map(
@@ -59,6 +60,7 @@ export class OffersService {
         return data.final.map((unnormalizedHotel) => ({
           id: unnormalizedHotel.HotelCode,
           name: unnormalizedHotel.HotelName,
+          image: unnormalizedHotel.HotelDescriptiveContent.Images[0].URL,
         }));
       });
     }
