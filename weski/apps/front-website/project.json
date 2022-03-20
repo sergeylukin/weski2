@@ -44,7 +44,8 @@
       "executor": "@nrwl/web:dev-server",
       "options": {
         "buildTarget": "front-website:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/front-website/proxy.conf.json"
       },
       "configurations": {
         "production": {
