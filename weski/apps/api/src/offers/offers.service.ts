@@ -56,10 +56,10 @@ export class OffersService {
             final: [],
           }
         );
-        return data.final.map(unnormalizedHotel => ({
+        return data.final.map((unnormalizedHotel) => ({
           id: unnormalizedHotel.HotelCode,
           name: unnormalizedHotel.HotelName,
-        });
+        }));
       });
     }
   }
