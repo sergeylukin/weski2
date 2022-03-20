@@ -7,16 +7,25 @@ const model = 'offers';
 
 const getUrl = () => `${API_URL}${model}`;
 
-const findBy = async (keyword: string) =>
-  await axios.get(`${getUrl()}?keyword=${keyword}`);
+const findBy = async (
+  resort: string,
+  from_date: string,
+  to_date: string,
+  group_size: number
+) =>
+  await axios.get(
+    `${getUrl()}?resort=${resort}&from_date=${from_date}&to_date=${to_date}&group_size=${group_size}`
+  );
 
-export function useHotels(keyword) {
+export function useHotels(resort, from_date, to_date, group_size) {
   const [hotels, setHotels] = useState<Hotel[]>([]);
   useEffect(() => {
-    findBy(keyword)
-      .then((r) => r.json())
-      .then(setHotels);
-  }, [keyword]);
+    if (resort && from_date && to_date && group_size) {
+      findBy(resort, from_date, to_date, group_size)
+        .then((r) => r.json())
+        .then(setHotels);
+    }
+  }, [resort, from_date, to_date, group_size]);
   return hotels;
 }
 
