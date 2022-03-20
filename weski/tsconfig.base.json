@@ -26,7 +26,7 @@
         "libs/front-website/feature-hotels-search-form/src/index.ts"
       ],
       "@namespace/shared/assets": ["libs/shared/assets/src/index.ts"],
-      "@namespace/ui-shared": ["libs/ui-shared/src/index.ts"]
+      "@namespace/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

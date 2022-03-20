@@ -9,6 +9,6 @@
     "front-website-feature-hotels-list": "libs/front-website/feature-hotels-list",
     "front-website-feature-hotels-search-form": "libs/front-website/feature-hotels-search-form",
     "shared-assets": "libs/shared/assets",
-    "ui-shared": "libs/ui-shared"
+    "shared-ui": "libs/shared/ui"
   }
 }

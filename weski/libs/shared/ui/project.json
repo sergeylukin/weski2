@@ -1,6 +1,6 @@
 {
-  "root": "libs/ui-shared",
-  "sourceRoot": "libs/ui-shared/src",
+  "root": "libs/shared/ui",
+  "sourceRoot": "libs/shared/ui/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -8,14 +8,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/ui-shared/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["libs/shared/ui/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/ui-shared"],
+      "outputs": ["coverage/libs/shared/ui"],
       "options": {
-        "jestConfig": "libs/ui-shared/jest.config.js",
+        "jestConfig": "libs/shared/ui/jest.config.js",
         "passWithNoTests": true
       }
     }

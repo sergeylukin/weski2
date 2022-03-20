@@ -1,9 +1,9 @@
 module.exports = {
-  displayName: 'ui-shared',
-  preset: '../../jest.preset.js',
+  displayName: 'shared-ui',
+  preset: '../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]sx?$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/libs/ui-shared',
+  coverageDirectory: '../../../coverage/libs/shared/ui',
 };

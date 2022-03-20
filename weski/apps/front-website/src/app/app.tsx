@@ -3,7 +3,7 @@ import { extendTheme, ChakraProvider } from '@chakra-ui/react';
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace';
 
 import { Home } from './home/home';
-import { DatepickerTheme } from '@namespace/ui-shared';
+import { DatepickerTheme } from '@namespace/shared/ui';
 
 const colors = {
   brand: {

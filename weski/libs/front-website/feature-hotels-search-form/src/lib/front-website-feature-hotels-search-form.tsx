@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import styled from '@emotion/styled';
 import { Box, Select } from '@chakra-ui/react';
-import { Datepicker } from '@namespace/ui-shared';
+import { Datepicker } from '@namespace/shared/ui';
 
 import { useHotels } from '@namespace/front-website/data-access-hotels';
 import { Hotel, Resort } from '@namespace/api-interfaces';
