@@ -1,9 +1,9 @@
 import { Route } from 'react-router-dom';
 
-import { FrontWebsiteFeatureHotelsList as HotelsList } from '@namespace/front-website/feature-hotels-list';
+import { Home } from './home/home';
 
 export function App() {
-  return <Route path="/" exact render={() => <HotelsList />} />;
+  return <Route path="/" exact render={() => <Home />} />;
 }
 
 export default App;
