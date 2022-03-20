@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-import { Hotel } from '@namespace/api-interfaces';
+import { Hotel, OFFERS_API_URL } from '@namespace/api-interfaces';
 
-export function useHotels() {
+export function useHotels(keyword) {
   const [hotels, setHotels] = useState<Hotel[]>([]);
   useEffect(() => {
-    fetch('/api/hotes')
+    fetch(OFFERS_API_URL + `?keyword=${keyword}`)
       .then((r) => r.json())
       .then(setHotels);
-  }, []);
-  return games;
+  }, [keyword]);
+  return hotels;
 }
 
 export default FrontWebsiteDataAccessHotels;
