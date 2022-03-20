@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@namespace/front-website/data-access-hotels": [
+        "libs/front-website/data-access-hotels/src/index.ts"
+      ],
       "@namespace/front-website/feature-hotels-list": [
         "libs/front-website/feature-hotels-list/src/index.ts"
       ]

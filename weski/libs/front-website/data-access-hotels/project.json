@@ -1,0 +1,25 @@
+{
+  "root": "libs/front-website/data-access-hotels",
+  "sourceRoot": "libs/front-website/data-access-hotels/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/front-website/data-access-hotels/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/front-website/data-access-hotels"],
+      "options": {
+        "jestConfig": "libs/front-website/data-access-hotels/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
