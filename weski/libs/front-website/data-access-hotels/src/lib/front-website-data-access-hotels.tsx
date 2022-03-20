@@ -5,7 +5,7 @@ import { Hotel, API_URL } from '@namespace/api-interfaces';
 
 const model = 'offers';
 
-const getUrl = () => `${API_URL}${model}`;
+const getUrl = () => `${API_URL}${model}/findByFilter`;
 
 const findBy = async (
   resort: string,
