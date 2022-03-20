@@ -17,14 +17,19 @@ const findBy = async (
     `${getUrl()}?resort=${resort}&from_date=${from_date}&to_date=${to_date}&group_size=${group_size}`
   );
 
-export function useHotels(resort, from_date, to_date, group_size) {
+export function useHotels(
+  resort: string,
+  from_date: string,
+  to_date: string,
+  group_size: number
+) {
   const [hotels, setHotels] = useState<Hotel[]>([]);
   useEffect(() => {
-    if (resort && from_date && to_date && group_size) {
-      findBy(resort, from_date, to_date, group_size)
-        .then((r) => r.json())
-        .then(setHotels);
-    }
+    // if (resort && from_date && to_date && group_size) {
+    findBy(resort, from_date, to_date, group_size).then((res) =>
+      setHotels(res.data.data)
+    );
+    // }
   }, [resort, from_date, to_date, group_size]);
   return hotels;
 }

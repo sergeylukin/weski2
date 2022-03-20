@@ -14,10 +14,13 @@ const StyledFrontWebsiteFeatureHotelsList = styled.div`
 export function FrontWebsiteFeatureHotelsList(
   props: FrontWebsiteFeatureHotelsListProps
 ) {
+  const { hotels } = props;
+
   return (
     <StyledFrontWebsiteFeatureHotelsList>
       <h1>Welcome to FrontWebsiteFeatureHotelsList!</h1>
-      {props.hotels.map((hotel) => <div>{hotel.name}</div>}
+      {Array.isArray(hotels) &&
+        hotels.map((hotel) => <div key={hotel.id}>{hotel.name}</div>)}
     </StyledFrontWebsiteFeatureHotelsList>
   );
 }
