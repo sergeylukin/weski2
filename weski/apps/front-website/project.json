@@ -17,7 +17,12 @@
         "tsConfig": "apps/front-website/tsconfig.app.json",
         "assets": [
           "apps/front-website/src/favicon.ico",
-          "apps/front-website/src/assets"
+          "apps/front-website/src/assets",
+          {
+            "input": "libs/shared/assets/src/lib",
+            "glob": "*.png",
+            "output": "assets"
+          }
         ],
         "styles": [],
         "scripts": [],

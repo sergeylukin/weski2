@@ -64,7 +64,7 @@ export function Home(props: HomeProps) {
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}
             >
-              WeSki
+              <img src="/assets/logo.png" width={264} height={49} alt="WeSki" />
             </Text>
 
             <Flex display={{ base: 'none', md: 'flex' }} ml="auto" mr={'auto'}>

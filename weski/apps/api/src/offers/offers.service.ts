@@ -5,7 +5,7 @@ import axios from 'axios';
 import { mock } from './mock';
 import { Hotel } from '@namespace/api-interfaces';
 
-const USE_MOCK = false;
+const USE_MOCK = true;
 const URL =
   'https://gya7b1xubh.execute-api.eu-west-2.amazonaws.com/default/HotelsSimulator';
 const MAX_GROUP_SIZE = 4;
