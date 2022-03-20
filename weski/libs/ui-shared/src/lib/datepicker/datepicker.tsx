@@ -36,6 +36,8 @@ import {
 
 import { useLilius } from 'use-lilius';
 
+export { Datepicker as DatepickerTheme } from './theme';
+
 /* eslint-disable-next-line */
 export interface DatepickerProps {
   onStartDateSelect: (date: Date) => void;
