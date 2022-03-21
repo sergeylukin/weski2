@@ -3,8 +3,11 @@
 ## Development
 
 ```
+cd weski/
 npm i && npm run serve:all
 ```
+
+If browser doesn't open - visit http://localhost:4200/
 
 ## Design
 
