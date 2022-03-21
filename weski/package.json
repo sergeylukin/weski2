@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nx serve",
     "serve:api": "nx run api:serve",
-    "serve:web": "nx serve front-website",
+    "serve:web": "nx serve front-website --open",
     "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\"",
     "build": "nx build",
     "test": "nx test"
