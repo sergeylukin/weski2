@@ -1,17 +1,13 @@
-import styled from '@emotion/styled';
+import { Heading } from '@chakra-ui/react';
 
 /* eslint-disable-next-line */
 export interface UiSharedProps {}
 
-const StyledUiShared = styled.div`
-  color: pink;
-`;
-
 export function UiShared(props: UiSharedProps) {
   return (
-    <StyledUiShared>
-      <h1>Welcome to UiShared!</h1>
-    </StyledUiShared>
+    <Heading as="h1" size="3xl">
+      Welcome to UiShared!
+    </Heading>
   );
 }
 

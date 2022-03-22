@@ -8,6 +8,7 @@
     "front-website-e2e": "apps/front-website-e2e",
     "front-website-feature-hotels-list": "libs/front-website/feature-hotels-list",
     "front-website-feature-hotels-search-form": "libs/front-website/feature-hotels-search-form",
+    "front-website-theme": "libs/front-website/theme",
     "shared-assets": "libs/shared/assets",
     "shared-ui": "libs/shared/ui"
   }

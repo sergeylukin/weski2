@@ -25,6 +25,9 @@
       "@namespace/front-website/feature-hotels-search-form": [
         "libs/front-website/feature-hotels-search-form/src/index.ts"
       ],
+      "@namespace/front-website/theme": [
+        "libs/front-website/theme/src/index.ts"
+      ],
       "@namespace/shared/assets": ["libs/shared/assets/src/index.ts"],
       "@namespace/shared/ui": ["libs/shared/ui/src/index.ts"]
     }
