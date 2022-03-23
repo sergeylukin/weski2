@@ -11,10 +11,10 @@ If browser doesn't open - visit http://localhost:4200/
 
 ## Storybook
 
-Browser available components (incl. Chakra-UI) by running
+Browse available components (incl. Chakra-UI) by running
 
 ```
-nx run shared-ui:storybook
+npm run storybook
 ```
 
 If browser doesn't open - visit http://localhost:4400/

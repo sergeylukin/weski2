@@ -7,6 +7,7 @@
     "serve:api": "nx run api:serve",
     "serve:web": "nx serve front-website --open",
     "serve:all": "concurrently \"npm run serve:api\" \"npm run serve:web\"",
+    "storybook": "$(npm bin)/nx run shared-ui:storybook",
     "build": "nx build",
     "test": "nx test"
   },
